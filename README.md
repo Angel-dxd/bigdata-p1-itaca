@@ -1,12 +1,9 @@
-# Proyecto N · [bigdata-p1-itaca]
-
-> **Plantilla.** Sustituye todo lo que va entre corchetes y borra las indicaciones en cursiva a medida que completes cada sección. Borra también las secciones de bloques que tu proyecto no trabaje.
+# Proyecto 1 · Analítica académica ITACA (origen XML)
 
 ## Descripción y objetivo
 
 Construir un dashboard de análisis académico en Power BI a partir de datos reales de la plataforma ITACA de la Conselleria de Educación, extraídos como ficheros XML.
 
-[Descripción]
 
 ## Arquitectura
 
