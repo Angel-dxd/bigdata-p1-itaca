@@ -11,7 +11,7 @@ logger = logging.getLogger("ingesta_itaca_xml")
 RUTA_ORIGEN = "data/exportaciones/Analisis_Academico"
 RUTA_RAW = "data/raw"
 
-TABLAS = ["alumnos", "cursos", "calificaciones", "contenidos", "grupos"]
+TABLAS = ["alumnos", "cursos", "calificaciones", "contenidos"]
 TABLAS_CON_NIA = ["alumnos", "calificaciones"]
 
 # Campo del modelo -> atributo en el XML de ITACA ("Anyo" se añade desde la raíz)
@@ -20,9 +20,7 @@ CAMPOS = {
     "cursos": {"Codigo": "codigo", "Nombre_Cas": "nombre_cas", "Nombre_Val": "nombre_val", "Padre": "padre"},
     "calificaciones": {"NIA": "alumno", "Curso": "curso", "Modulo": "contenido",
                        "Nota": "nota_numerica", "Evaluacion": "evaluacion"},
-    "contenidos": {"Curso": "curso", "Modulo": "codigo", "Nombre_Modulo": "nombre_cas"},
-    "grupos": {"Grupo": "codigo", "Nombre": "nombre", "Turno": "turno",
-               "Modalidad": "modalidad", "Capacidad": "capacidad"},
+    "contenidos": {"Curso": "curso", "Modulo": "codigo", "Nombre_Modulo": "nombre_cas"}
 }
 
 
