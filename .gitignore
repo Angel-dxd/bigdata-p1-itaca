@@ -1,0 +1,10 @@
+# Entorno virtual de Python
+.venv/
+__pycache__/
+
+# Datos: nunca a Git (datos personales del alumnado)
+data/
+
+# Ficheros de sistema / secretos
+.DS_Store
+.env
