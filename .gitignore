@@ -3,7 +3,8 @@
 __pycache__/
 
 # Datos: nunca a Git (datos personales del alumnado)
-data/
+data/exportaciones/
+data/raw/
 
 # Ficheros de sistema / secretos
 .DS_Store
