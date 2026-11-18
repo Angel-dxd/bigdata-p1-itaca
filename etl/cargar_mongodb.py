@@ -12,13 +12,9 @@ contrasenya = quote_plus(os.environ["MONGO_PASSWORD"])
 cliente = MongoClient(f"mongodb://admin:{contrasenya}@localhost:27017/")
 db = cliente["itaca"]
 
-# De momento cargamos un solo año
-CARPETA = "data/raw/2025-26"
-FECHA = "2026-10-28"
-
 
 def cargar_contenidos() -> None:
-    with open(f"{CARPETA}/contenidos_{FECHA}.json", encoding="utf-8") as f:
+    with open("data/raw/2025-26/contenidos_2026-10-28.json", encoding="utf-8") as f:
         modulos = json.load(f)
     documentos = [
         {
@@ -34,7 +30,7 @@ def cargar_contenidos() -> None:
 
 def cargar_cursos() -> None:
     # Necesaria para la actividad guiada (aplanar cursos)
-    with open(f"{CARPETA}/cursos_{FECHA}.json", encoding="utf-8") as f:
+    with open("data/raw/2025-26/cursos_2026-10-28.json", encoding="utf-8") as f:
         cursos = json.load(f)
     documentos = [
         {
@@ -50,7 +46,7 @@ def cargar_cursos() -> None:
 
 
 def cargar_alumnos() -> None:
-    with open(f"{CARPETA}/alumnos_{FECHA}.json", encoding="utf-8") as f:
+    with open("data/raw/2025-26/alumnos_2026-10-28.json", encoding="utf-8") as f:
         alumnos = json.load(f)
     documentos = [
         {
@@ -66,7 +62,7 @@ def cargar_alumnos() -> None:
 
 
 def cargar_calificaciones() -> None:
-    with open(f"{CARPETA}/calificaciones_{FECHA}.json", encoding="utf-8") as f:
+    with open("data/raw/2025-26/calificaciones_2026-10-28.json", encoding="utf-8") as f:
         calificaciones = json.load(f)
     documentos = [
         {
